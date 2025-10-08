@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6ea286620889e047af6c1ac728cfbd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FinishLine
-  Restartdelay: 1
+  Restartdelay: 0.1
   FinishParticles: {fileID: 2016039442}
 --- !u!61 &96926138
 BoxCollider2D:
@@ -653,7 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66b371e8a1115ae43848d6a79d6776f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CrashDetector
-  Restartdelay: 1
+  Restartdelay: 0.05
   PlayerParticles: {fileID: 1285275651}
 --- !u!58 &841675196
 CircleCollider2D:

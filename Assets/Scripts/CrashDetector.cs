@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class CrashDetector : MonoBehaviour
 {
-    [SerializeField] float Restartdelay = 1f;
+    [SerializeField] float Restartdelay = .05f;
     [SerializeField] ParticleSystem PlayerParticles;
     void OnTriggerEnter2D(Collider2D collision)
     {

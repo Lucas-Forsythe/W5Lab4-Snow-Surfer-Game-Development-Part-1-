@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
-    [SerializeField] float Restartdelay = 1f;
+    [SerializeField] float Restartdelay = .5f;
     [SerializeField] ParticleSystem FinishParticles;
 
     void OnTriggerEnter2D(Collider2D collision)
