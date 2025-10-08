@@ -3,13 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class CrashDetector : MonoBehaviour
 {
-    [SerializeField] float delay = 100f;
+    [SerializeField] float Restartdelay = 1f;
+    [SerializeField] ParticleSystem PlayerParticles;
     void OnTriggerEnter2D(Collider2D collision)
     {
         int layerIndex = LayerMask.NameToLayer("Floor");
         if (collision.gameObject.layer == layerIndex)
         {
-            Invoke("ReloadScene", delay);
+            PlayerParticles.Play();
+            Invoke("ReloadScene", Restartdelay);
         }
 
     }
